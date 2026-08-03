@@ -1,0 +1,73 @@
+Metadata-Version: 2.4
+Name: aegiscore
+Version: 0.1.0
+Summary: An advanced, modular, and professional cybersecurity toolkit for defensive auditing and authorized testing.
+Author: Professional Cyber Developer
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: typer[all]>=0.9.0
+Requires-Dist: rich>=13.0.0
+Requires-Dist: requests>=2.31.0
+Requires-Dist: aiohttp>=3.9.0
+Requires-Dist: beautifulsoup4>=4.12.0
+Requires-Dist: passlib>=1.7.4
+Requires-Dist: cryptography>=41.0.0
+Requires-Dist: scapy>=2.5.0
+Requires-Dist: stegano>=0.11.2
+Requires-Dist: boto3>=1.34.0
+
+# AegisCore 🛡️
+
+AegisCore is a highly professional, modular, and advanced cybersecurity toolkit built in Python. Designed for defensive auditing, security posture assessment, and authorized testing.
+
+## Modules Included
+
+1. **Reconnaissance**: Network scanning, banner grabbing, OSINT.
+2. **Defensive Auditing**: File Integrity Monitoring (FIM), static code analysis, log analysis.
+3. **Web Application Security**: Directory fuzzing, HTTP header analysis, basic vulnerability scanning.
+4. **Cryptography & Passwords**: Hash generation, encoding/decoding, offline password cracking.
+5. **Automation**: Tool orchestration and workflow execution.
+
+## Cross-Platform Support
+
+AegisCore is built in pure Python and is 100% compatible with:
+- **Termux** (Android)
+- **Linux** (Kali, Ubuntu, Arch, etc.)
+- **Windows** (PowerShell, CMD, WSL)
+
+## Installation
+
+We have provided simple install scripts for your platform.
+
+### For Termux / Linux
+Run the bash script. It will automatically detect Termux, install necessary system packages (`pkg install python`), and setup the Python environment.
+```bash
+chmod +x install.sh
+./install.sh
+source venv/bin/activate
+```
+
+### For Windows
+Run the batch file from your command prompt or PowerShell.
+```cmd
+install.bat
+venv\Scripts\activate
+```
+
+## Usage
+
+Once installed, you can use the `aegis` command-line tool. It comes with beautiful terminal output powered by Rich and Typer.
+
+```bash
+# View available modules
+aegis --help
+
+# Example: Run a fast port scan
+aegis recon port-scan 192.168.1.100
+
+# Example: Check HTTP security headers
+aegis web headers https://example.com
+```
+
+## Disclaimer
+This toolkit is developed for educational purposes, defensive auditing, and authorized security testing. Always ensure you have explicit permission before scanning or attacking any target. The developers assume no liability for misuse.

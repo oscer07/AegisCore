@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aegiscore"
+version = "0.1.0"
+description = "An advanced, modular, and professional cybersecurity toolkit for defensive auditing and authorized testing."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "Professional Cyber Developer" }
+]
+dependencies = [
+    "typer[all]>=0.9.0",
+    "rich>=13.0.0",
+    "requests>=2.31.0",
+    "aiohttp>=3.9.0",
+    "beautifulsoup4>=4.12.0",
+    "passlib>=1.7.4",
+    "cryptography>=41.0.0",
+    "scapy>=2.5.0",
+    "stegano>=0.11.2",
+    "boto3>=1.34.0"
+]
+
+[project.scripts]
+aegis = "aegiscore.main:app"
