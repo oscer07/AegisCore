@@ -56,10 +56,10 @@ Whether you are performing a defensive audit (Blue Team) or authorized reconnais
 
 AegisCore is 100% cross-platform. We provide easy install scripts for Windows, Linux, and Android (Termux).
 
-### Option 1: Linux / Kali (Android)
+### Option 1: Linux / Kali / Termux (Android)
 We have provided an automated bash script that installs system requirements and sets up the Python environment.
 ```bash
-git clone https://github.com/oscer07/aegiscore.git
+git clone https://github.com/yourusername/aegiscore.git
 cd aegiscore
 chmod +x install.sh
 ./install.sh
@@ -71,7 +71,7 @@ source venv/bin/activate
 ### Option 2: Windows
 Run the included batch file to set up your virtual environment automatically.
 ```cmd
-git clone https://github.com/oscer07/aegiscore.git
+git clone https://github.com/yourusername/aegiscore.git
 cd aegiscore
 install.bat
 
