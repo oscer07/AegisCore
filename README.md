@@ -59,7 +59,7 @@ AegisCore is 100% cross-platform. We provide easy install scripts for Windows, L
 ### Option 1: Linux / Kali / Termux (Android)
 We have provided an automated bash script that installs system requirements and sets up the Python environment.
 ```bash
-git clone https://github.com/yourusername/aegiscore.git
+git clone https://github.com/oscer07/aegiscore.git
 cd aegiscore
 chmod +x install.sh
 ./install.sh
@@ -71,7 +71,7 @@ source venv/bin/activate
 ### Option 2: Windows
 Run the included batch file to set up your virtual environment automatically.
 ```cmd
-git clone https://github.com/yourusername/aegiscore.git
+git clone https://github.com/oscer07/aegiscore.git
 cd aegiscore
 install.bat
 
